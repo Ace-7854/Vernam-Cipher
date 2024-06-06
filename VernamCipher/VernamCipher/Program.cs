@@ -27,15 +27,17 @@ namespace VernamCipher
             }
 
             char[] Ciphertxt = new char[AsciiValues.Length];
+            
             for (int i = 0; i < AsciiValues.Length; i++)
             {
                 Ciphertxt[i] = Convert.ToChar(AsciiValues[i]);
             }
 
             string returnvalue = "";
+            
             for (int i = 0; i < Ciphertxt.Length; i++)
             {
-                returnvalue = returnvalue + Ciphertxt.ToString();
+                returnvalue = returnvalue + Ciphertxt[i].ToString();
             }
             
             Console.WriteLine($"The ciphertext is: {returnvalue}");
