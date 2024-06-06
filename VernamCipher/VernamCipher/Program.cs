@@ -70,7 +70,6 @@ namespace VernamCipher
             }
 
             char[] result = new char[bin1.Length];
-
             for (int i = 0; i < bin1.Length; i++)
             {
                 // Convert chars to ints, perform XOR, then convert back to char
